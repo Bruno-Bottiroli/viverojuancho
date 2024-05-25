@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css');
+
+html {
+    color-scheme: dark;
+}
+
+* {
+    padding: 0px;
+}
+
+hr {
+    border-style: solid;
+    border-color: black !important;
+}
+
+.ocultar {
+    display: none;
+}
+
+header{
+    background-color: #4B644A;
+    padding: 7px;
+    padding-left: 10px;
+
+    img{
+        width: 150px;
+        height: auto;
+        object-fit: contain;
+    }
+}
+h1{
+    color: white;
+    display: flex;
+    align-items: center;
+    font-family: "Libre Caslon Text", serif;
+    
+}
+main{
+    padding-left: 10px;
+}
