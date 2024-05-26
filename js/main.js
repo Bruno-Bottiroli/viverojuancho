@@ -37,9 +37,26 @@ function comprar() {
         } else {
             const shop = new Compra(carrito)
             let subtotal = shop.obtenerSubtotal()
-            console.log("El costo total de la compra es de $ ", subtotal.toLocaleString("es-AR"))  
+            console.log("El costo total de la compra es de $ ", subtotal)  
 
         }
 }
 }
+
+
+function financiar(nrocuotas){
+    for (let i = 0; i < carrito.length; i++) {
+        total += carrito[i].precio;
+    }
+    
+    console.log('El total es:', total);
+
+    let respuestafinanciar= confirm("Quiere financiar?")
+    if (respuestafinanciar== true){
+        nrocuotas= prompt("Cuantas cuotas quiere hacer?")
+        let financiado= total/nrocuotas
+        alert("El pago se hara en " + nrocuotas + " cuotas. Cada una de $" + financiado)
+    }
+}
 comprar()
+financiar()
