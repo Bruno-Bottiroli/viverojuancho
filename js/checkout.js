@@ -2,6 +2,7 @@
 const carrito = JSON.parse(localStorage.getItem("carritoCompras")) ?? []
 const divContenedor = document.getElementById("divContenedor")
 const comprarcarrito = document.querySelector("button#comprarcarrito")
+const importeTotalCarrito = document.querySelector("importeTotalCarrito")
 
 const botoncarrito = document.querySelector("img#imgcarrito")
 const botoncatalogo= document.querySelector("img#imgmarket")
@@ -56,4 +57,4 @@ comprarcarrito.addEventListener("click", ()=> {
     carrito.length = 0
 })
     
-    
+ 
