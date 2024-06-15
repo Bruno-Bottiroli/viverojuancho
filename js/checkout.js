@@ -31,7 +31,7 @@ function retornartabla(carrito){
                     <img class="imagen-carrito" src="${carrito.imagen}" alt="">
                     </td>
                     <td class="fs-1 nombretabla">${carrito.nombre}</td>
-                    <td class="fs-1">$ ${carrito.precio.toLocaleString("es-AR")}</td>
+                    <td class="fs-1">$ ${carrito.precio}</td>
                     <td class="quitar-carrito" title="Clic para quitar del carrito">
                     <button id=${carrito.codigo} class="quitarcompra">Quitar</button>
                     </td>
