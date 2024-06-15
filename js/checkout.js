@@ -25,6 +25,8 @@ function calcularTotalCarrito() {
     }
 }
 
+
+
 function retornartabla(carrito){
     return `
                 <tr>
@@ -46,6 +48,7 @@ function cargartabla(){
             divContenedor.innerHTML += retornartabla(carrito)
         })
         retornartabla(carrito);
+        calcularTotalCarrito()
     } 
 }
 
