@@ -9,5 +9,5 @@ botoncarrito.addEventListener("click", ()=> {
     location.href = "./pages/catalogo.html" 
 })
 botoncarrito.addEventListener("click", ()=> {
-    location.href = "index.html" 
+    location.href = "/index.html" 
 })

@@ -14,7 +14,7 @@ botoncatalogo.addEventListener("click", ()=> {
     location.href = "../pages/catalogo.html" 
 })
 logoindex.addEventListener("click", ()=> {
-    location.href = "index.html" 
+    location.href = "/index.html" 
 })
 
 function calcularTotalCarrito() {
