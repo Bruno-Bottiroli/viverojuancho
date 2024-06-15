@@ -5,9 +5,9 @@ const logoindex= document.querySelector("img#logoindex")
 botoncarrito.addEventListener("click", ()=> {
     location.href = "./pages/checkout.html" 
 })
-botoncarrito.addEventListener("click", ()=> {
+botoncatalogo.addEventListener("click", ()=> {
     location.href = "./pages/catalogo.html" 
 })
-botoncarrito.addEventListener("click", ()=> {
+logoindex.addEventListener("click", ()=> {
     location.href = "/index.html" 
 })
