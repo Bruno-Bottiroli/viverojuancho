@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css');
+@import url('https://fonts.googleapis.com/css2?family=Namdhinggo:wght@400;500;600;700;800&display=swap');
 
 html {
     color-scheme: dark;
@@ -23,11 +24,16 @@ header{
     background-color: #4B644A;
     padding: 7px;
     padding-left: 10px;
+    height: 15vh;
+    
+    z-index: 1000; 
 
     img{
-        width: 150px;
+        width: 90px;
         height: auto;
         object-fit: contain;
+        border-radius: 200px 200px 200px 200px;
+        margin: auto;
     }
 }
 h1{
@@ -35,8 +41,133 @@ h1{
     display: flex;
     align-items: center;
     font-family: "Libre Caslon Text", serif;
-    
+    font-size: 4rem;
+    padding-top: 15px;
 }
 main{
     padding-left: 10px;
+}
+
+.img-card{
+    width: auto;
+    height: auto;
+    display: flex;
+    border-radius: 22px 22px 0px 0px;
+}
+
+.fondoverde{
+    background-color: #4B644A;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px; /* Puedes ajustar este valor según necesites */
+    margin: auto;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    color: rgba(0, 0, 0, 0.655);
+    filter: brightness(0.8);
+    border-radius: 20px;
+}
+.nombre{
+    font-family: "Libre Caslon Text", serif;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    white-space: nowrap;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 4rem; /* Ajusta el tamaño del texto según necesites */
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-family: "Libre Caslon Text", serif;
+    /*text-shadow: 4px 4px 5px rgba(0,0,0,0.6);*/
+}
+
+.imgcarrito{
+    cursor:pointer;
+}
+.img-botones{
+    cursor: pointer;
+    width: 80px;
+    flex-wrap: nowrap;
+}
+.img-cara{
+    width: 70px;
+    margin-top: 5px;
+}
+.offcanvas-start {
+    width: 250px;
+  }
+.sidebar {
+    width: 250px;
+    border-radius: 0px 15px 15px 0px;
+    background-color: #d8e3c5;
+    padding: 15px;
+    margin-top: 20vh;
+    margin-bottom: 10vh;
+    height: 75vh;
+    position: fixed;
+    
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+}
+
+.content {
+    margin-left: 250px;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.filter-section {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 0px;
+    color: rgb(29, 23, 14);
+    font-family: "Namdhinggo", serif;
+}
+.filter-section{
+    h3{
+        font-size: 2rem;
+        color: rgb(225, 238, 199);
+        font-family: "Namdhinggo", serif;
+    }
+    
+}
+.sidebar{
+    h2{
+        font-size: 2.5rem;
+        color: rgb(192, 235, 218);
+        font-family: "Namdhinggo", serif;
+    }
+}
+.button, button{
+    background-color: #cd8b76;
+}
+.bordercard{
+    border-radius: 0px 0px 20px 21px;
+}
+
+.foot{
+    
+    height: 200px;
+    background-color: #4B644A;
+}
+
+.imagen-carrito{
+    width: 120px;
+    height: auto;
 }
