@@ -171,3 +171,6 @@ label {
     width: 120px;
     height: auto;
 }
+.logoindex{
+    cursor: pointer;
+}

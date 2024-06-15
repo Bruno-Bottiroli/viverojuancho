@@ -3,6 +3,20 @@ const carrito = JSON.parse(localStorage.getItem("carritoCompras")) ?? []
 const divContenedor = document.getElementById("divContenedor")
 const comprarcarrito = document.querySelector("button#comprarcarrito")
 
+const botoncarrito = document.querySelector("img#imgcarrito")
+const botoncatalogo= document.querySelector("img#imgmarket")
+const logoindex= document.querySelector("img#logoindex")
+
+botoncarrito.addEventListener("click", ()=> {
+    location.href = "../pages/checkout.html" 
+})
+botoncatalogo.addEventListener("click", ()=> {
+    location.href = "../pages/catalogo.html" 
+})
+logoindex.addEventListener("click", ()=> {
+    location.href = "index.html" 
+})
+
 function calcularTotalCarrito() {
     if (carrito.length > 0) {
         let montoTotalCarrito = carrito.reduce((acc, prod)=> acc + prod.precio, 0)
