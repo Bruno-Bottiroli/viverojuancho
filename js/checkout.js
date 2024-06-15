@@ -49,13 +49,11 @@ function cargartabla(){
 }
 
 cargartabla()
-function comprar(){
-    if (carrito.lenght>0){
-        comprarcarrito.addEventListener("click", ()=> {
-            divContenedor.innerHTML = ""
-            localStorage.removeItem("carritoCompras")
-            carrito.length = 0
-        })
-    }
-    }
+
+comprarcarrito.addEventListener("click", ()=> {
+    divContenedor.innerHTML = ""
+    localStorage.removeItem("carritoCompras")
+    carrito.length = 0
+})
+    
     
