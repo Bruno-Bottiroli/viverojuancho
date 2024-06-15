@@ -49,7 +49,7 @@ function cargartabla(){
 }
 
 cargartabla()
-function comprarcarrito(){
+function comprar(){
     if (carrito.lenght>0){
         comprarcarrito.addEventListener("click", ()=> {
             divContenedor.innerHTML = ""
