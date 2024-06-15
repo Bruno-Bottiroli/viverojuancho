@@ -8,3 +8,6 @@ function botoncarro(){
         botoncarrito.addEventListener("click", iracheckout())
     }
 }
+botoncarrito.addEventListener("click", ()=> {
+    carrito.length > 0 ? location.href = "./pages/checkout.html" : alert("⛔️ Cargue al menos un producto en el carrito.")
+})
