@@ -7,6 +7,8 @@ const botonesAgregar = document.querySelectorAll("button.add-to-cart")
 const botoncarrito = document.querySelector("img#imgcarrito")
 const botoncatalogo= document.querySelector("img#imgmarket")
 const logoindex= document.querySelector("img#logoindex")
+const productos = []
+const URLproductos= "js/productos.json"
 
 botoncarrito.addEventListener("click", ()=> {
     location.href = "../pages/checkout.html" 
@@ -59,6 +61,19 @@ function retornarCardError() {
                 <h3>Intenta nuevamente en unos instantes...🤦🏻‍♂️</h3>
             </div>`
 } 
+
+function obtenerproductos(){
+    fetch(URLproductos)
+    .then((Response)=>Response.json())
+    .then((data)=> productos.push(...data))
+    .then(()=> cargarProductos(productos))
+    .catch((error)=>{
+        console.error("error")
+        divContenedor.innerHTML = retornarCardError()
+    })
+
+    
+}
 
 function cargarProductos(){
     if (productos.length > 0) {

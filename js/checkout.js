@@ -7,6 +7,7 @@ const importeTotalCarrito = document.querySelector("importeTotalCarrito")
 const botoncarrito = document.querySelector("img#imgcarrito")
 const botoncatalogo= document.querySelector("img#imgmarket")
 const logoindex= document.querySelector("img#logoindex")
+const botonquitar= document.querySelectorAll(".quitarcompra")
 
 botoncarrito.addEventListener("click", ()=> {
     location.href = "../pages/checkout.html" 
@@ -48,16 +49,28 @@ function cargartabla(){
             divContenedor.innerHTML += retornartabla(carrito)
         })
         retornartabla(carrito);
+        activarquitarboton()
         calcularTotalCarrito()
     } 
 }
 
-cargartabla()
+
 
 comprarcarrito.addEventListener("click", ()=> {
     divContenedor.innerHTML = ""
     localStorage.removeItem("carritoCompras")
     carrito.length = 0
 })
-    
- 
+
+function activarquitarboton(){
+    if (botonquitar.length > 0) {
+        botonquitar.forEach((boton)=> {
+            boton.addEventListener("click", ()=> {
+                const productoparaquitar = productos.find((producto)=> producto.codigo == boton.id)
+                localStorage.removeItem(productoparaquitar)
+            })
+        })
+}
+}
+
+cargartabla()
