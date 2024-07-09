@@ -54,7 +54,7 @@ function filtrarProductosPorNombre(nombre) {
         productosFiltrados.forEach((producto) => {
             divContenedor.innerHTML += retornarCardHTML(producto);
         });
-        activarEventosClick(); // Asegúrate de activar eventos de clic después de cargar productos filtrados
+        activarEventosClick(); 
     } else {
         divContenedor.innerHTML = "<p>No se encontraron productos.</p>";
     }
@@ -123,6 +123,6 @@ function retornarCardError() {
             </div>`;
 }
 
-// Inicializar contador del carrito al cargar la página
+
 actualizarContadorCarrito();
 obtenerproductos();
