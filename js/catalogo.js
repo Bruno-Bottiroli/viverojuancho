@@ -5,7 +5,7 @@ const divContenedor = document.getElementById("divContenedor");
 const btncompra = document.querySelectorAll(".btn-comprar");
 const btncarrito = document.querySelector("#imgcarrito");
 const botonesAgregar = document.querySelectorAll("button.add-to-cart");
-const numerocarrito= document.querySelector("#totalcarro")
+const numerocarrito= document.querySelector("#carrototal");
 const botoncarrito = document.querySelector("img#imgcarrito");
 const botoncatalogo = document.querySelector("img#imgmarket");
 const logoindex = document.querySelector("img#logoindex");
@@ -20,7 +20,6 @@ logoindex.addEventListener("click", () => {
     location.href = "/index.html";
 });
 
-
 function obtenerproductos() {
     fetch(URLproductos)
         .then((response) => response.json())
@@ -34,7 +33,6 @@ function obtenerproductos() {
         });
 }
 
-
 function cargarProductos() {
     if (productos.length > 0) {
         divContenedor.innerHTML = "";
@@ -47,8 +45,6 @@ function cargarProductos() {
     }
 }
 
-
-
 function filtrarProductosPorNombre(nombre) {
     const productosFiltrados = productos.filter((producto) =>
         producto.nombre.toLowerCase().includes(nombre.toLowerCase())
@@ -58,11 +54,11 @@ function filtrarProductosPorNombre(nombre) {
         productosFiltrados.forEach((producto) => {
             divContenedor.innerHTML += retornarCardHTML(producto);
         });
+        activarEventosClick(); // Asegúrate de activar eventos de clic después de cargar productos filtrados
     } else {
         divContenedor.innerHTML = "<p>No se encontraron productos.</p>";
     }
 }
-
 
 const inputBusqueda = document.getElementById("inputBusqueda");
 inputBusqueda.addEventListener("input", (event) => {
@@ -74,8 +70,6 @@ inputBusqueda.addEventListener("input", (event) => {
     }
 });
 
-
-
 function activarEventosClick() {
     const botonesAgregar = document.querySelectorAll("button.btn-comprar");
     if (botonesAgregar.length > 0) {
@@ -86,11 +80,15 @@ function activarEventosClick() {
                 );
                 carrito.push(productoSeleccionado);
                 localStorage.setItem("carritoCompras", JSON.stringify(carrito));
+                actualizarContadorCarrito(); 
             });
         });
     }
 }
 
+function actualizarContadorCarrito() {
+    numerocarrito.textContent = `Productos en el carrito: ${carrito.length}`;
+}
 
 function retornarCardHTML(producto) {
     return `
@@ -125,6 +123,6 @@ function retornarCardError() {
             </div>`;
 }
 
-
+// Inicializar contador del carrito al cargar la página
+actualizarContadorCarrito();
 obtenerproductos();
-
