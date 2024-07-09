@@ -1,6 +1,6 @@
  [
   {
-    "codigo": 0,
+    "codigo": "0",
     "nombre": "Hummus 2dm",
     "precio": 1500,
     "stock": 8,
@@ -8,7 +8,7 @@
     "imagen": "../assets/img/Vivero-001/Vivero/hummus.jpg"
   },
   {
-    "codigo": 1,
+    "codigo": "1",
     "nombre": "Hummus 6dm",
     "precio": 3300,
     "stock": 9,
@@ -16,7 +16,7 @@
     "imagen": "../assets/img/Vivero-001/Vivero/hummus.jpg"
   },
   {
-    "codigo": 2,
+    "codigo": "2",
     "nombre": "Perlita",
     "precio": 1500,
     "stock": 9,
@@ -24,7 +24,7 @@
     "imagen": "../assets/img/Vivero-001/Vivero/perlita.jpg"
   },
   {
-    "codigo": 3,
+    "codigo": "3",
     "nombre": "Tierra cactus",
     "precio": 1600,
     "stock": 3,
@@ -32,7 +32,7 @@
     "imagen": "../assets/img/Vivero-001/Vivero/tierranegra.jpg"
   },
   {
-    "codigo": 7,
+    "codigo": "7",
     "nombre": "Dietes",
     "precio": 4500,
     "stock": 2,
@@ -40,7 +40,7 @@
     "imagen": "../assets/img/Vivero-001/Vivero/dietes.jpg"
   },
   {
-    "codigo": 8,
+    "codigo": "8",
     "nombre": "Lantana",
     "precio": 900,
     "stock": 6,
@@ -48,7 +48,7 @@
     "imagen": "../assets/img/Vivero-001/Vivero/lantana.jpg"
   },
   {
-    "codigo": 9,
+    "codigo": "9",
     "nombre": "Margarita",
     "precio": 800,
     "stock": 1,
@@ -56,7 +56,7 @@
     "imagen": "../assets/img/Vivero-001/Vivero/margaritas.jpg"
   },
   {
-    "codigo": 11,
+    "codigo": "11",
     "nombre": "Rosa China",
     "precio": 3000,
     "stock": 4,
@@ -64,7 +64,7 @@
     "imagen": "../assets/img/Vivero-001/Vivero/rosachina.jpg"
   },
   {
-    "codigo": 13,
+    "codigo": "13",
     "nombre": "Asplenium XL",
     "precio": 7000,
     "stock": 1,
@@ -72,7 +72,7 @@
     "imagen": "../assets/img/Vivero-001/Vivero/asplenium.jpg"
   },
   {
-    "codigo": 17,
+    "codigo": "17",
     "nombre": "Syngo. Chocolate",
     "precio": 3400,
     "stock": 2,
@@ -80,7 +80,7 @@
     "imagen": "../assets/img/Vivero-001/Vivero/syngochoco.jpg"
   },
   {
-    "codigo": 18,
+    "codigo": "18",
     "nombre": "Palo de agua",
     "precio": 3500,
     "stock": 1,
@@ -88,7 +88,7 @@
     "imagen": "../assets/img/Vivero-001/Vivero/palodeagua.jpg"
   },
   {
-    "codigo": 19,
+    "codigo": "19",
     "nombre": "Maranta",
     "precio": 2800,
     "stock": 2,
@@ -96,7 +96,7 @@
     "imagen": "../assets/img/Vivero-001/Vivero/maranta.jpg"
   },
   {
-    "codigo": 20,
+    "codigo": "20",
     "nombre": "CLepia",
     "precio": 2600,
     "stock": 1,
@@ -104,7 +104,7 @@
     "imagen": "../assets/img/Vivero-001/Vivero/clepia.jpg"
   },
   {
-    "codigo": 21,
+    "codigo": "21",
     "nombre": "Syngonium plata",
     "precio": 6000,
     "stock": 2,
@@ -112,7 +112,7 @@
     "imagen": "../assets/img/Vivero-001/Vivero/syngoplata.jpg"
   },
   {
-    "codigo": 22,
+    "codigo": "22",
     "nombre": "Syngonium rosa",
     "precio": 5500,
     "stock": 2,
@@ -120,7 +120,7 @@
     "imagen": "../assets/img/Vivero-001/Vivero/syngorosa.jpg"
   },
   {
-    "codigo": 23,
+    "codigo": "23",
     "nombre": "Begonia",
     "precio": 2000,
     "stock": 0,
@@ -128,7 +128,7 @@
     "imagen": "../assets/img/Vivero-001/Vivero/begonia.jpg"
   },
   {
-    "codigo": 25,
+    "codigo": "25",
     "nombre": "Alocasia Amazonica",
     "precio": 4000,
     "stock": 0,
@@ -136,7 +136,7 @@
     "imagen": "../assets/img/Vivero-001/Vivero/amazonica.jpg"
   },
   {
-    "codigo": 27,
+    "codigo": "27",
     "nombre": "Fitonia",
     "precio": 2800,
     "stock": 0,
@@ -144,7 +144,7 @@
     "imagen": "../assets/img/Vivero-001/Vivero/fitonia.jpg"
   },
   {
-    "codigo": 29,
+    "codigo": "29",
     "nombre": "Enamorada del muro",
     "precio": 2500,
     "stock": 2,
@@ -152,7 +152,7 @@
     "imagen": "../assets/img/Vivero-001/Vivero/enamoradamuro.jpg"
   },
   {
-    "codigo": 31,
+    "codigo": "31",
     "nombre": "Adansonii",
     "precio": 3000,
     "stock": 1,
@@ -160,7 +160,7 @@
     "imagen": "../assets/img/Vivero-001/Vivero/adansonii.jpg"
   },
   {
-    "codigo": 33,
+    "codigo": "33",
     "nombre": "Pilea",
     "precio": 1700,
     "stock": 2,
@@ -168,7 +168,7 @@
     "imagen": "../assets/img/Vivero-001/Vivero/peperomia.jpg"
   },
   {
-    "codigo": 34,
+    "codigo": "34",
     "nombre": "Peperomia corazon",
     "precio": 2800,
     "stock": 1,
@@ -176,7 +176,7 @@
     "imagen": "../assets/img/Vivero-001/Vivero/pilea.jpg"
   },
   {
-    "codigo": 35,
+    "codigo": "35",
     "nombre": "Cordatum grande",
     "precio": 4200,
     "stock": 1,
@@ -184,7 +184,7 @@
     "imagen": "../assets/img/Vivero-001/Vivero/cordatum.jpg"
   },
   {
-    "codigo": 40,
+    "codigo": "40",
     "nombre": "Philo. sanguineo",
     "precio": 2500,
     "stock": 1,
@@ -192,7 +192,7 @@
     "imagen": "../assets/img/Vivero-001/Vivero/philosanguineo.jpg"
   },
   {
-    "codigo": 41,
+    "codigo": "41",
     "nombre": "Philo. Xanadu",
     "precio": 3500,
     "stock": 2,
@@ -200,7 +200,7 @@
     "imagen": "../assets/img/Vivero-001/Vivero/philoxanadu.jpg"
   },
   {
-    "codigo": 42,
+    "codigo": "42",
     "nombre": "Aralia",
     "precio": 3700,
     "stock": 2,
@@ -208,7 +208,7 @@
     "imagen": "../assets/img/Vivero-001/Vivero/aralia.jpg"
   },
   {
-    "codigo": 44,
+    "codigo": "44",
     "nombre": "Peperomia",
     "precio": 2800,
     "stock": 3,
@@ -216,7 +216,7 @@
     "imagen": "../assets/img/Vivero-001/Vivero/pepero.jpg"
   },
   {
-    "codigo": 45,
+    "codigo": "45",
     "nombre": "Philo. Imperial",
     "precio": 4900,
     "stock": 1,

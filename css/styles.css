@@ -36,6 +36,10 @@ header{
         margin: auto;
     }
 }
+.buttonbl{
+    background-color: #FFFFFF ; 
+    color: #9b4dca;
+}
 h1{
     color: white;
     display: flex;
@@ -47,7 +51,13 @@ h1{
 main{
     padding-left: 10px;
 }
-
+.total-carrito{
+    font-size: 2rem;
+}
+.tamaniocata{
+    width: 500px;
+    width: 500px;
+}
 .img-card{
     width: auto;
     height: auto;
@@ -65,7 +75,9 @@ main{
     max-width: 1200px; /* Puedes ajustar este valor según necesites */
     margin: auto;
 }
-
+.inputcolor{
+    color: black;
+}
 .image-container img {
     width: 100%;
     height: auto;
@@ -73,6 +85,37 @@ main{
     color: rgba(0, 0, 0, 0.655);
     filter: brightness(0.8);
     border-radius: 20px;
+}
+.brigth{
+    color: rgba(0, 0, 0, 0.779);
+    filter: brightness(1);
+}
+span#totalcarro{
+    font-size: 7rem;
+    transform: translate(-50%, -40%);
+    cursor: pointer;
+}
+
+.oscurecer{
+    color: rgba(0, 0, 0, 0.884);
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: block;
+    color: rgba(0, 0, 0, 0.655);
+    filter: brightness(0.8);
+    border-radius: 20px;
+}
+.text-overlay2{
+    position: absolute;
+    transform: translate(-50%, -50%);
+            
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
 }
 .nombre{
     font-family: "Libre Caslon Text", serif;
@@ -93,6 +136,20 @@ main{
     /*text-shadow: 4px 4px 5px rgba(0,0,0,0.6);*/
 }
 
+.text-overlay3 {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    white-space: nowrap;
+    transform: translate(-50%, -50%);
+    color: white;
+    line-height: 100px;
+    font-size: 10rem; 
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: "Libre Caslon Text", serif;
+}
 .imgcarrito{
     cursor:pointer;
 }
